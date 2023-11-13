@@ -1,0 +1,193 @@
+﻿body{
+    background-color: #f1ede8;
+    color: #29235c;
+}
+
+.card{
+    padding: 0!important;
+    
+}
+
+.topo{
+    padding: 15px 0 15px;
+    color: #29235c;
+}
+
+.logo{
+    margin: 0 90px 0 90px;
+}
+
+.cor-botao{
+    background-color: #29235c;
+    border-color: #29235c;
+}
+
+.botao{
+    margin-left: 88%;
+}
+
+.textocadastro{
+    font-size: 15px;
+    margin-right: 1px;
+}
+
+.botaologin{
+    display: none;
+}
+
+.nav-pills .pill .nav-link{
+    background-color: #29235c;
+}
+.nav-pills .pill .nav-link:not(.active){
+    background-color: #ffffffff;
+    color: #29235c;
+}
+
+@media screen and (max-width: 1201px) {
+    .card{
+        margin: 0 !important;
+        
+    }
+ }
+
+ @media screen and (max-width: 1198px) {
+    .card{
+        margin: 0 !important;
+        width: 320px !important;
+        
+    }
+ }
+
+ @media screen and (max-width: 991px) {
+    .card{
+        margin: 0 !important;
+        width: 100% !important;
+        margin-bottom: 5%!important;
+    }
+    .login{
+        display: none;
+    }
+
+    .botaologin{
+        display: block !important;
+        float: right;
+        margin-right: 10%;
+        margin-top: 6%;
+    }
+ }
+
+ @media screen and (max-width: 668px) {
+    .card{
+        margin: 0 !important;
+        width: 100% !important;
+        margin-bottom: 5%!important;
+    }
+    .botao{
+        margin-left: 45% !important;
+    }
+    .login{
+        display: none;
+    }
+    .botaologin{
+        display: block !important;
+        float: right;
+        margin-right: 5%;
+        margin-top: 10%;
+    }
+    .logo{
+        margin-left: 1%;
+    }
+ }
+
+/*Códigos de estilo de cadastro*/
+
+.cadastro{
+    margin-top: 90px;
+}
+
+#nome, #sobrenome{
+    text-transform:capitalize;
+}
+
+/* Fim do código cadastro */
+
+/*Codigos de estilo pedidos*/
+
+#Caneca{
+    display: none;
+}
+#Chinelo{
+    display: none;
+}
+#Camisa{
+    display: none;
+}
+#Bolsa{
+    display: none;
+}
+#Outros{
+    display: none;
+}
+#Azuleijo{
+    display: none;
+}
+#Chaveiro-comum{
+    display: none;
+}
+#Chaveiro-espuma{
+    display: none;
+}
+#Quebra-cabecas{
+    display: none;
+}
+#Avental{
+    display: none;
+}
+#tipo-magica{
+    display: none;
+}
+#tipo-alcacolorida{
+    display: none;
+}
+#tipo-tarjabranca{
+    display: none;
+}
+#tipo-chopp{
+    display: none;
+}
+#tipo-cromadas{
+    display: none;
+}
+#tipo-fundocolorido{
+    display: none;
+}
+#tipo-metalizadas{
+    display: none;
+}
+#tipo-squeeze{
+    display: none;
+}
+
+#container-pedidos{
+    background-color: #fff;
+    border-radius: 3%;
+    padding: 4%;
+}
+#pag-pedidos{
+    text-align: center;
+}
+hr {
+    height:1px; border:none; color:#000; background-color:#000;
+}    
+
+/*fim codigo pedidos*/
+/*codigo contato*/
+
+#conteudo{
+    text-align: center;
+}
+
+#card{
+    width: 10%;
+    height: 10%;
+}
