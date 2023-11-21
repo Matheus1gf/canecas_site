@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <!-- Estilização -->
+    <title>Outros</title>
+    <!-- Estilizações -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style.css">
-    <!-- Script -->
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -30,12 +30,31 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <div class="logo">
+            <!-- Logo -->
+            <div class="logo col">
                 <img src="img/logo/Logo%20final2.png" alt="">
+            </div>
+
+            <!-- Login -->
+            <div class="col">
+                <label class="sr-only" for="username">Usuário</label>
+                <input type="text" name="username" class="form-control mb-2" id="username" placeholder="Usuário">
+                <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+                    Esqueci minha senha
+                </a>
+            </div>
+
+            <div class="col">
+                <label class="sr-only" for="password">Senha</label>
+                <input type="password" name="password" class="form-control" id="password" placeholder="Senha">
+                <a href="cadastro.php">Clique aqui para se cadastrar</a>
+            </div>
+            
+            <div class="col">
+                <button type="submit" class="btn btn-dark text-white login mb-2">Enviar</button>
             </div>
         </div>
 
-        
         <!-- Menu de navegação -->
         <div class="row mt-5">
             <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow bg-white rounded w-100">
@@ -79,59 +98,8 @@
     </div>
 
     <div class="container">
-        <div class="row">
-            <h1>Login</h1>
-            <hr class="linha cor-botao">
-            <div class="row">
-                <div class="col-md-6">
-                    <form class="container" action="verificarlogin.php" method="post">
-                        <div class="form-group">
-                            <input type="email" class="form-control" name="email" id="email" aria-describedby="email"
-                                placeholder="Seu e-mail">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" name="senha" id="senha" placeholder="Sua senha">
-                        </div>
-                        <button type="submit" class="btn btn-dark cor-botao text-white btn-lg">Entrar</button>
-                    </form>
-                </div>
 
-
-                <div class="col-md-6 vl">
-
-                    <p class="text-justify">
-                        Porque se cadastrar no nosso site? Tenha mais facilidade
-                        em executar seus pedidos e nos enviar a decoração que desejar
-                        em nossos produtos. Nós da juana personalizações buscamos sempre
-                        o maior conforto e melhor atendimento aos nossos clientes.
-                        Junte-se a nós e se CADASTRE logo abaixo.
-                    </p>
-                    <p class="text-center">
-                        <a href="cadastro.php">Clique AQUI e faça seu cadastro.</a>
-                    </p>
-                    <p class="text-center">
-                        Caso não deseje se cadastrar, <a href="contato.php">Clique AQUI</a> para que possa
-                        visualizar nossos meios de contatos.
-                    </p>
-                </div>
-            </div>
-        </div>
     </div>
-
-    <footer class="cor-botao p-4">
-        <div class="text-center text-white">
-            <p>Banco de Areia, Mesquita - RJ, 26564-000</p>
-            <p>Copyright © 2018 - Todos os direitos reservados.</p>
-        </div>
-        <div class="botao btn btn bg-white p-0">
-            <a href="https://www.facebook.com/juanapersonalizacoes/?ref=settings"><img src="img/social/facebook.png"
-                    alt=""></a>
-        </div>
-        <div class="btn btn bg-white p-0">
-            <a href="https://web.telegram.org/#/im?p=u777000_4041729175755639182"><img src="img/social/telegram.png"
-                    alt=""></a>
-        </div>
-    </footer>
 </body>
 
 </html>
