@@ -1,0 +1,13 @@
+.cadastro{
+    margin-top: 90px;
+}
+
+#nome, #sobrenome{
+    text-transform:capitalize;
+}
+
+
+.textocadastro {
+    font-size: 15px;
+    margin-right: 1px;
+  }

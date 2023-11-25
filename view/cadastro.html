@@ -20,141 +20,143 @@
     <script src="js.src/mascaraTelefone.js"></script>
 </head>
 <body>
-    <div class="container-fluid">
-        <!-- Logo -->
-        <div class="row">
-            <div class="logo">
-                <img src="img/logo/Logo%20final2.png" alt="">
+    <main>
+        <div class="container-fluid">
+            <!-- Logo -->
+            <div class="row">
+                <div class="logo">
+                    <img src="img/logo/Logo%20final2.png" alt="">
+                </div>
+            </div>
+        
+            <!-- Menu de navegação -->
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow bg-white rounded w-100">
+                    <a class="navbar-brand" href="index.html">HOME</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
+                        aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    PRODUTOS
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="canecas.html">CANECAS</a>
+                                    <a class="dropdown-item" href="outros.html">CHINELOS</a>
+                                    <a class="dropdown-item" href="outros.html">CAMISAS</a>
+                                    <a class="dropdown-item" href="outros.html">BOLSAS</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="outros.html">OUTROS</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pedidos.html">LOJA DE PEDIDOS</a>
+                            </li>
+        
+                            <li class="nav-item">
+                                <a class="nav-link ml-3" href="quemsomos.html">QUEM SOMOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ml-3" href="contato.html">CONTATO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
         </div>
-    
-        <!-- Menu de navegação -->
-        <div class="row">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow bg-white rounded w-100">
-                <a class="navbar-brand" href="index.php">HOME</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
-                    aria-label="Alterna navegação">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-    
-                <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                PRODUTOS
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="canecas.php">CANECAS</a>
-                                <a class="dropdown-item" href="outros.php">CHINELOS</a>
-                                <a class="dropdown-item" href="outros.php">CAMISAS</a>
-                                <a class="dropdown-item" href="outros.php">BOLSAS</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="outros.php">OUTROS</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pedidos.php">LOJA DE PEDIDOS</a>
-                        </li>
-    
-                        <li class="nav-item">
-                            <a class="nav-link ml-3" href="quemsomos.php">QUEM SOMOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ml-3" href="contato.php">CONTATO</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
 
-    <div class="container">
-        <!-- Campos de cadastro -->
-        <div id="container-pedidos" class="cadastro bg-white mb-5 row">
-            <div class="col-md-6">
-                <label for="nome_completo" class="form-label">Nome Completo:</label>
-                <input type="text" class="form-control" name="nome_completo" required id="nome_completo">
-            </div>
-        
-            <div class="col-md-6">
-                <label for="cpf" class="form-label">CPF:</label>
-                <input type="text" class="form-control" name="cpf" required id="cpf">
-            </div>
-        
-            <div class="col-12">
-                <label for="email" class="form-label">E-mail:</label>
-                <input type="email" class="form-control" name="email" required id="email">
-            </div>
-        
-            <div class="col-12">
-                <label for="data_nascimento" class="form-label">Data de Nascimento:</label>
-                <input type="date" class="form-control" name="data_nascimento" required id="data_nascimento">
-            </div>
-        
-            <div class="col-12">
-                <label for="sexo" class="form-label">Sexo:</label>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="sexo" value="M" id="sexoM">
-                    <label class="form-check-label" for="sexoM">Masculino</label>
+        <div class="container">
+            <!-- Campos de cadastro -->
+            <div id="container-pedidos" class="cadastro bg-white mb-5 row">
+                <div class="col-md-6">
+                    <label for="nome_completo" class="form-label">Nome Completo:</label>
+                    <input type="text" class="form-control" name="nome_completo" required id="nome_completo">
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="sexo" value="F" id="sexoF">
-                    <label class="form-check-label" for="sexoF">Feminino</label>
+            
+                <div class="col-md-6">
+                    <label for="cpf" class="form-label">CPF:</label>
+                    <input type="text" class="form-control" name="cpf" required id="cpf">
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="sexo" value="O" id="sexoO">
-                    <label class="form-check-label" for="sexoO">Outro</label>
+            
+                <div class="col-12">
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input type="email" class="form-control" name="email" required id="email">
                 </div>
-            </div>
-        
-            <div class="col-12">
-                <label for="cidade" class="form-label">Cidade:</label>
-                <input type="text" class="form-control" name="cidade" required id="cidade">
-            </div>
-        
-            <div class="col-12">
-                <label for="estado" class="form-label">Estado:</label>
-                <input type="text" class="form-control" name="estado" required id="estado">
-            </div>
-        
-            <div class="col-12">
-                <label for="bairro" class="form-label">Bairro:</label>
-                <input type="text" class="form-control" name="bairro" required id="bairro">
-            </div>
-        
-            <div class="col-12">
-                <label for="rua" class="form-label">Rua:</label>
-                <input type="text" class="form-control" name="rua" required id="rua">
-            </div>
-        
-            <div class="col-12">
-                <label for="numero" class="form-label">Número:</label>
-                <input type="text" class="form-control" name="numero" required id="numero">
-            </div>
-        
-            <div class="col-12">
-                <label for="complemento" class="form-label">Complemento:</label>
-                <input type="text" class="form-control" name="complemento" id="complemento">
-            </div>
-        
-            <div class="col-12">
-                <label for="rg" class="form-label">RG (Opcional):</label>
-                <input type="text" class="form-control" name="rg" id="rg">
-            </div>
-        
-            <div class="col-12">
-                <label for="senha" class="form-label">Senha (será criptografada):</label>
-                <input type="password" class="form-control" name="senha" required id="senha">
-            </div>
-        
-            <div class="col-12">
-                <button class="btn btn-secondary cadastrar_button">Cadastrar</button>
+            
+                <div class="col-12">
+                    <label for="data_nascimento" class="form-label">Data de Nascimento:</label>
+                    <input type="date" class="form-control" name="data_nascimento" required id="data_nascimento">
+                </div>
+            
+                <div class="col-12">
+                    <label for="sexo" class="form-label">Sexo:</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" value="M" id="sexoM">
+                        <label class="form-check-label" for="sexoM">Masculino</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" value="F" id="sexoF">
+                        <label class="form-check-label" for="sexoF">Feminino</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="sexo" value="O" id="sexoO">
+                        <label class="form-check-label" for="sexoO">Outro</label>
+                    </div>
+                </div>
+            
+                <div class="col-12">
+                    <label for="cidade" class="form-label">Cidade:</label>
+                    <input type="text" class="form-control" name="cidade" required id="cidade">
+                </div>
+            
+                <div class="col-12">
+                    <label for="estado" class="form-label">Estado:</label>
+                    <input type="text" class="form-control" name="estado" required id="estado">
+                </div>
+            
+                <div class="col-12">
+                    <label for="bairro" class="form-label">Bairro:</label>
+                    <input type="text" class="form-control" name="bairro" required id="bairro">
+                </div>
+            
+                <div class="col-12">
+                    <label for="rua" class="form-label">Rua:</label>
+                    <input type="text" class="form-control" name="rua" required id="rua">
+                </div>
+            
+                <div class="col-12">
+                    <label for="numero" class="form-label">Número:</label>
+                    <input type="text" class="form-control" name="numero" required id="numero">
+                </div>
+            
+                <div class="col-12">
+                    <label for="complemento" class="form-label">Complemento:</label>
+                    <input type="text" class="form-control" name="complemento" id="complemento">
+                </div>
+            
+                <div class="col-12">
+                    <label for="rg" class="form-label">RG (Opcional):</label>
+                    <input type="text" class="form-control" name="rg" id="rg">
+                </div>
+            
+                <div class="col-12">
+                    <label for="senha" class="form-label">Senha (será criptografada):</label>
+                    <input type="password" class="form-control" name="senha" required id="senha">
+                </div>
+            
+                <div class="col-12">
+                    <button class="btn btn-secondary cadastrar_button">Cadastrar</button>
+                </div>
             </div>
         </div>
-    </div>
-
+    </main>
+    
     <footer class="cor-botao p-4" >
         <div class="text-center text-white">
             <p>Banco de Areia, Mesquita - RJ, 26564-000</p>

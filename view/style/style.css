@@ -1,193 +1,153 @@
-﻿body{
-    background-color: #f1ede8;
-    color: #29235c;
+﻿body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #f1ede8;
+  color: #29235c;
 }
 
-.card{
-    padding: 0!important;
-    
+main {
+  flex: 1;
 }
 
-.topo{
-    padding: 15px 0 15px;
-    color: #29235c;
+.card {
+  padding: 0 !important;
 }
 
-.logo{
-    margin: 0 90px 0 90px;
+.topo {
+  padding: 15px 0 15px;
+  color: #29235c;
 }
 
-.cor-botao{
-    background-color: #29235c;
-    border-color: #29235c;
+.logo {
+  margin: 0 90px 0 90px;
 }
 
-.botao{
-    margin-left: 88%;
+.cor-botao {
+  background-color: #29235c;
+  border-color: #29235c;
 }
 
-.textocadastro{
-    font-size: 15px;
-    margin-right: 1px;
+.botao {
+  margin-left: 88%;
 }
 
-.botaologin{
-    display: none;
+.botaologin {
+  display: none;
 }
 
-.nav-pills .pill .nav-link{
-    background-color: #29235c;
+.nav-pills .pill .nav-link {
+  background-color: #29235c;
 }
-.nav-pills .pill .nav-link:not(.active){
-    background-color: #ffffffff;
-    color: #29235c;
+.nav-pills .pill .nav-link:not(.active) {
+  background-color: #ffffffff;
+  color: #29235c;
 }
+
+/* .carrosel-slide-custom {
+  margin: 0;
+  padding: 0;
+  background: url("img/banner/01.jpg") center center fixed;
+  background-size: cover;
+}
+
+.banner-container {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding: 100px 20px;
+  z-index: 2;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.carousel-item {
+  position: relative;
+  filter: blur(8px);
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+
 
 @media screen and (max-width: 1201px) {
-    .card{
-        margin: 0 !important;
-        
-    }
- }
-
- @media screen and (max-width: 1198px) {
-    .card{
-        margin: 0 !important;
-        width: 320px !important;
-        
-    }
- }
-
- @media screen and (max-width: 991px) {
-    .card{
-        margin: 0 !important;
-        width: 100% !important;
-        margin-bottom: 5%!important;
-    }
-    .login{
-        display: none;
-    }
-
-    .botaologin{
-        display: block !important;
-        float: right;
-        margin-right: 10%;
-        margin-top: 6%;
-    }
- }
-
- @media screen and (max-width: 668px) {
-    .card{
-        margin: 0 !important;
-        width: 100% !important;
-        margin-bottom: 5%!important;
-    }
-    .botao{
-        margin-left: 45% !important;
-    }
-    .login{
-        display: none;
-    }
-    .botaologin{
-        display: block !important;
-        float: right;
-        margin-right: 5%;
-        margin-top: 10%;
-    }
-    .logo{
-        margin-left: 1%;
-    }
- }
-
-/*Códigos de estilo de cadastro*/
-
-.cadastro{
-    margin-top: 90px;
+  .card {
+    margin: 0 !important;
+  }
 }
 
-#nome, #sobrenome{
-    text-transform:capitalize;
+@media screen and (max-width: 1198px) {
+  .card {
+    margin: 0 !important;
+    width: 320px !important;
+  }
 }
 
-/* Fim do código cadastro */
+@media screen and (max-width: 991px) {
+  .card {
+    margin: 0 !important;
+    width: 100% !important;
+    margin-bottom: 5% !important;
+  }
+  
+  .login {
+    display: none;
+  }
 
-/*Codigos de estilo pedidos*/
-
-#Caneca{
-    display: none;
-}
-#Chinelo{
-    display: none;
-}
-#Camisa{
-    display: none;
-}
-#Bolsa{
-    display: none;
-}
-#Outros{
-    display: none;
-}
-#Azuleijo{
-    display: none;
-}
-#Chaveiro-comum{
-    display: none;
-}
-#Chaveiro-espuma{
-    display: none;
-}
-#Quebra-cabecas{
-    display: none;
-}
-#Avental{
-    display: none;
-}
-#tipo-magica{
-    display: none;
-}
-#tipo-alcacolorida{
-    display: none;
-}
-#tipo-tarjabranca{
-    display: none;
-}
-#tipo-chopp{
-    display: none;
-}
-#tipo-cromadas{
-    display: none;
-}
-#tipo-fundocolorido{
-    display: none;
-}
-#tipo-metalizadas{
-    display: none;
-}
-#tipo-squeeze{
-    display: none;
+  .botaologin {
+    display: block !important;
+    float: right;
+    margin-right: 10%;
+    margin-top: 6%;
+  }
 }
 
-#container-pedidos{
-    background-color: #fff;
-    border-radius: 3%;
-    padding: 4%;
-}
-#pag-pedidos{
-    text-align: center;
-}
-hr {
-    height:1px; border:none; color:#000; background-color:#000;
-}    
+@media screen and (max-width: 668px) {
+  .card {
+    margin: 0 !important;
+    width: 100% !important;
+    margin-bottom: 5% !important;
+  }
 
-/*fim codigo pedidos*/
-/*codigo contato*/
+  .botao {
+    margin-left: 45% !important;
+  }
 
-#conteudo{
-    text-align: center;
-}
+  .login {
+    display: none;
+  }
 
-#card{
-    width: 10%;
-    height: 10%;
+  .botaologin {
+    display: block !important;
+    float: right;
+    margin-right: 5%;
+    margin-top: 10%;
+  }
+
+  .logo {
+    margin-left: 1%;
+  }
 }

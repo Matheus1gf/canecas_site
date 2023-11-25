@@ -28,628 +28,631 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <!-- Logo -->
-            <div class="logo col">
-                <img src="img/logo/Logo%20final2.png" alt="">
-            </div>
-
-            <!-- Login -->
-            <div class="col">
-                <label class="sr-only" for="username">Usuário</label>
-                <input type="text" name="username" class="form-control mb-2" id="username" placeholder="Usuário">
-                <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
-                    Esqueci minha senha
-                </a>
-            </div>
-            <div class="col">
-                <label class="sr-only" for="password">Senha</label>
-                <input type="password" name="password" class="form-control" id="password" placeholder="Senha">
-                <a href="cadastro.php">Clique aqui para se cadastrar</a>
-            </div>
-            <div class="col">
-                <button type="submit" class="btn btn-dark text-white login mb-2">Enviar</button>
-            </div>
-        </div>
-
-        
-        <!-- Menu de navegação -->
-        <div class="row mt-5">
-            <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow bg-white rounded w-100">
-                <a class="navbar-brand" href="index.php">HOME</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
-                    aria-label="Alterna navegação">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Logo -->
+                <div class="logo col">
+                    <img src="img/logo/Logo%20final2.png" alt="">
+                </div>
     
-                <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-                    <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                PRODUTOS
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="canecas.php">CANECAS</a>
-                                <a class="dropdown-item" href="outros.php">CHINELOS</a>
-                                <a class="dropdown-item" href="outros.php">CAMISAS</a>
-                                <a class="dropdown-item" href="outros.php">BOLSAS</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="outros.php">OUTROS</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pedidos.php">LOJA DE PEDIDOS</a>
-                        </li>
+                <!-- Login -->
+                <div class="col">
+                    <label class="sr-only" for="username">Usuário</label>
+                    <input type="text" name="username" class="form-control mb-2" id="username" placeholder="Usuário">
+                    <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
+                        Esqueci minha senha
+                    </a>
+                </div>
+                <div class="col">
+                    <label class="sr-only" for="password">Senha</label>
+                    <input type="password" name="password" class="form-control" id="password" placeholder="Senha">
+                    <a href="cadastro.html">Clique aqui para se cadastrar</a>
+                </div>
+                <div class="col">
+                    <button type="submit" class="btn btn-dark text-white login mb-2">Enviar</button>
+                </div>
+            </div>
     
-                        <li class="nav-item">
-                            <a class="nav-link ml-3" href="quemsomos.php">QUEM SOMOS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link ml-3" href="contato.php">CONTATO</a>
-                        </li>
-                    </ul>
+    
+            <!-- Menu de navegação -->
+            <div class="row mt-5">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow bg-white rounded w-100">
+                    <a class="navbar-brand" href="index.html">HOME</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
+                        aria-label="Alterna navegação">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+                        <ul class="navbar-nav">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    PRODUTOS
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="canecas.html">CANECAS</a>
+                                    <a class="dropdown-item" href="outros.html">CHINELOS</a>
+                                    <a class="dropdown-item" href="outros.html">CAMISAS</a>
+                                    <a class="dropdown-item" href="outros.html">BOLSAS</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="outros.html">OUTROS</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="pedidos.html">LOJA DE PEDIDOS</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link ml-3" href="quemsomos.html">QUEM SOMOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ml-3" href="contato.html">CONTATO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+    
+            <!-- Banner -->
+            <div class="row">
+                <div id="carouselExampleControls" class="carousel slide carrosel-slide-custom" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block" src="img/banner/01.jpg" alt="Primeiro Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block" src="img/banner/02.jpg" alt="Segundo Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block" src="img/banner/03.jpg" alt="Terceiro Slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
                 </div>
-            </nav>
+            </div>
+    
         </div>
-    </div>
 
-    <div class="container">
-        <!-- Banner -->
-        <div class="row">
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="img/banner/01.jpg" alt="Primeiro Slide">
+        <div class="container">
+            <div class="row">
+                <ul class="nav nav-pills nav-fill bg-white shadow-sm rounded" id="pills-tab" role="tablist">
+                    <li class="nav-item pill">
+                        <a class="nav-link active" id="pills-comum-tab" data-toggle="pill" href="#pills-comum" role="tab"
+                            aria-controls="pills-comum" aria-selected="true">COMUM</a>
+                    </li>
+                    <li class="nav-item pill">
+                        <a class="nav-link" id="pills-metalizada-tab" data-toggle="pill" href="#pills-metalizada" role="tab"
+                            aria-controls="pills-metalizada" aria-selected="false">METALIZADA</a>
+                    </li>
+                    <li class="nav-item pill">
+                        <a class="nav-link" id="pills-magica-tab" data-toggle="pill" href="#pills-magica" role="tab"
+                            aria-controls="pills-magica" aria-selected="false">MÁGICA</a>
+                    </li>
+                    <li class="nav-item pill">
+                        <a class="nav-link" id="pills-cromada-tab" data-toggle="pill" href="#pills-cromada" role="tab"
+                            aria-controls="pills-cromada" aria-selected="false">CROMADA</a>
+                    </li>
+                    <li class="nav-item pill">
+                        <a class="nav-link" id="pills-fundo-tab" data-toggle="pill" href="#pills-fundo" role="tab"
+                            aria-controls="pills-fundo" aria-selected="false">FUNDO COLORIDO</a>
+                    </li>
+                    <li class="nav-item pill">
+                        <a class="nav-link" id="pills-alca-tab" data-toggle="pill" href="#pills-alca" role="tab"
+                            aria-controls="pills-alca" aria-selected="false">ALÇA COLORIDA</a>
+                    </li>
+                    <li class="nav-item pill">
+                        <a class="nav-link" id="pills-tarja-tab" data-toggle="pill" href="#pills-tarja" role="tab"
+                            aria-controls="pills-tarja" aria-selected="false">TARJA BRANCA</a>
+                    </li>
+                    <li class="nav-item pill">
+                        <a class="nav-link" id="pills-chopp-tab" data-toggle="pill" href="#pills-chopp" role="tab"
+                            aria-controls="pills-chopp" aria-selected="false">CHOPP</a>
+                    </li>
+                    <li class="nav-item pill">
+                        <a class="nav-link" id="pills-japones-tab" data-toggle="pill" href="#pills-japones" role="tab"
+                            aria-controls="pills-japones" aria-selected="false">JAPONÊS E CAFÉ</a>
+                    </li>
+                    <li class="nav-item pill">
+                        <a class="nav-link" id="pills-squeeze-tab" data-toggle="pill" href="#pills-squeeze" role="tab"
+                            aria-controls="pills-squeeze" aria-selected="false">SQUEEZE</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="largura-site w-90 mt-4">
+                <div class="tab-content container" id="pills-tabContent">
+                    <!-- Canecas comuns -->
+                    <div class="tab-pane fade show active" id="pills-comum" role="tabpanel"
+                        aria-labelledby="pills-comum-tab">
+                        <div class="row mb-4" id="linha1comum">
+                            <!-- Card 1 -->
+                            <div class="shadow bg-white rounded" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/Comum/comum1.png" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA COMUM BRANCA</h5>
+                                    <p class="card-text">R$15,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 1 -->
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="img/banner/02.jpg" alt="Segundo Slide">
+
+                    <!-- Canecas metalizadas -->
+                    <div class="tab-pane fade" id="pills-metalizada" role="tabpanel" aria-labelledby="pills-metalizada-tab">
+                        <div class="row mb-4" id="linha1metalizada">
+                            <!-- Card 1 -->
+                            <div class="card col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/Metalizada/metalizada4.png"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA METALIZADA ROSA</h5>
+                                    <p class="card-text">R$23,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 1 -->
+
+                            <!-- Card 2 -->
+                            <div class="card ml-5 mr-5 col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/Metalizada/metalizada5.png"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA METALIZADA PRATA</h5>
+                                    <p class="card-text">R$23,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 2 -->
+
+                            <!-- Card 2 -->
+                            <div class="card col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/Metalizada/metalizada6.png"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA METALIZADA DOURADA</h5>
+                                    <p class="card-text">R$24,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 2 -->
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="img/banner/03.jpg" alt="Terceiro Slide">
+
+                    <!-- Canecas mágicas -->
+                    <div class="tab-pane fade" id="pills-magica" role="tabpanel" aria-labelledby="pills-magica-tab">
+                        <div class="row mb-4" id="linha1fundo">
+                            <!-- Card 1 -->
+                            <div class="card col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/Magica/alca2.png" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA MÁGICA COM FORMATO DE CORAÇÃO</h5>
+                                    <p class="card-text mt-4">Caneca nas cores vermelha e azul por R$25,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 1 -->
+
+                            <!-- Card 2 -->
+                            <div class="card ml-5 mr-5 col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/Magica/alca3.png" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA MÁGICA COM ALÇA DE CORAÇÃO</h5>
+                                    <p class="card-text mt-5">Caneca na cor vermelha por R$25,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 2 -->
+
+                            <!-- Card 3 -->
+                            <div class="card col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/Magica/magica4.png" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA MÁGICA COM INTERIOR E COLHER COLORIDOS</h5>
+                                    <p class="card-text mt-4">Caneca nas cores azul clara, laranja, rosa, verde, vermelha e
+                                        amarela por R$25,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 3 -->
+                        </div>
+
+                        <div class="row mb-4" id="linha2magica">
+                            <!-- Card 4 -->
+                            <div class="card col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/Magica/magica2.png" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA MÁGICA FOSCA</h5>
+                                    <p class="card-text mt-4">Caneca nas cores preta e preta opaca por R$24,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Card 5 -->
+                            <div class="card ml-5 mr-5 col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/Magica/magica3.png" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA MÁGICA BRILHANTE</h5>
+                                    <p class="card-text mt-4">Caneca nas cores preta, vermelha e azul por R$23,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 5 -->
+                            <div class="card col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/Magica/magica1.png" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA ALÇA E INTERIOR</h5>
+                                    <p class="card-text mt-4">Caneca nas cores vermelha e azul por R$25,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Card 6 -->
+
+                            <!-- Fim do card 6 -->
+                        </div>
                     </div>
+
+                    <!-- Canecas cromadas -->
+                    <div class="tab-pane fade" id="pills-cromada" role="tabpanel" aria-labelledby="pills-cromada-tab">
+                        <div class="row mb-4" id="linha1cromada">
+                            <!-- Card 1 -->
+                            <div class="card col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/cromada/cromada2.png"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA CROMADA PRATA</h5>
+                                    <p class="card-text">R$24,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 1 -->
+
+                            <!-- Card 2 -->
+                            <div class="card ml-5 col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/cromada/cromada3.png"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA CROMADA DOURADA</h5>
+                                    <p class="card-text">R$24,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                        </div>
+                        <!-- Fim do card 2 -->
+                    </div>
+
+                    <!-- Canecas com fundo -->
+                    <div class="tab-pane fade" id="pills-fundo" role="tabpanel" aria-labelledby="pills-fundo-tab">
+                        <div class="row mb-4" id="linha1fundo">
+                            <!-- Card 1 -->
+                            <div class="card col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/FundoColorido/fundo2.png"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA FUNDO COLORIDO</h5>
+                                    <p class="card-text mt-5">Caneca branca com interior colorido R$17,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 1 -->
+
+                            <!-- Card 2 -->
+                            <div class="card ml-5 mr-5 col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/FundoColorido/fundo3.png"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA FUNDO, ALÇA E INTERIROR</h5>
+                                    <p class="card-text mt-4">Caneca branca com fundo alça e interior coloridos por R$21,00.
+                                    </p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 2 -->
+
+                            <!-- Card 3 -->
+                            <div class="card col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/FundoColorido/fundo4.png"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA ALÇA E INTERIOR</h5>
+                                    <p class="card-text mt-5">Caneca branca com fundo e alça coloridos por R$19,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 3 -->
+                        </div>
+
+                        <div class="row mb-4" id="linha2fundo">
+                            <!-- Card 4 -->
+                            <div class="card" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/FundoColorido/fundo5.png"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA COM ALÇA DE CORAÇÃO E INTERIOR</h5>
+                                    <p class="card-text mt-4">Caneca branca com alça com formato de coração e interior
+                                        coloridos por R$20,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Canecas com alça -->
+                    <div class="tab-pane fade" id="pills-alca" role="tabpanel" aria-labelledby="pills-alca-tab">
+                        <div class="row mb-4" id="linha1alca">
+                            <!-- Card 1 -->
+                            <div class="card col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/FundoColorido/fundo3.png"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA FUNDO, ALÇA E INTERIOR</h5>
+                                    <p class="card-text mt-4">Caneca branca com fundo alça e interior coloridos por R$21,00.
+                                    </p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 1 -->
+
+                            <!-- Card 2 -->
+                            <div class="card ml-5 mr-5 col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/FundoColorido/fundo4.png"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA ALÇA E INTERIOR</h5>
+                                    <p class="card-text mt-5">Caneca branca com fundo e alça coloridos por R$19,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 2 -->
+
+                            <!-- Card 3 -->
+                            <div class="card col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/FundoColorido/fundo5.png"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA COM ALÇA DE CORAÇÃO E INTERIOR</h5>
+                                    <p class="card-text mt-4">Caneca branca com alça com formato de coração e interior
+                                        coloridos por R$20,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 3 -->
+
+                        </div>
+
+                        <div class="row mb-4" id="linha2fundo">
+                            <!-- Card 4 -->
+                            <div class="card" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/AlcaColorida/al%C3%A7a.png"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA COM ALÇA COLORIDA</h5>
+                                    <p class="card-text mt-5">Caneca branca com alça colorida por R$17,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Visitar</a></div>
+                            </div>
+                            <!-- Fim do card 4 -->
+                        </div>
+
+                    </div>
+
+                    <!-- Canecas com tarja -->
+                    <div class="tab-pane fade" id="pills-tarja" role="tabpanel" aria-labelledby="pills-tarja-tab">
+                        <div class="row mb-4" id="linha1tarja">
+                            <!-- Card 1 -->
+                            <div class="card col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/TarjaBranca/tarja3.png"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA NEON COM TARJA BRANCA</h5>
+                                    <p class="card-text">Caneca neon nas cores verde e vermelha por R$26,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 1 -->
+
+                            <!-- Card 2 -->
+                            <div class="card ml-5 col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/TarjaBranca/tarja2.png"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA PRETA COM TARJA BRANCA</h5>
+                                    <p class="card-text">Caneca nas cores Verde clara, vermelha e laranja por R$28,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                        </div>
+                        <!-- Fim do card 2 -->
+                    </div>
+
+                    <!-- Canecas de choop -->
+                    <div class="tab-pane fade" id="pills-chopp" role="tabpanel" aria-labelledby="pills-chopp-tab">
+                        <div class="row mb-4" id="linha1chopp">
+                            <!-- Card 1 -->
+                            <div class="card col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/Choop/chopp1.png" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA DE CHOPP DE VIDRO JATEADA 330ML</h5>
+                                    <p class="card-text">R$15,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 1 -->
+
+                            <!-- Card 2 -->
+                            <div class="card ml-5 mr-5 col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/Choop/chopp6.png" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA DE CHOPP DE ALUMÍNIO 400ML</h5>
+                                    <p class="card-text">R$15,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 2 -->
+
+                            <!-- Card 2 -->
+                            <div class="card col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/Choop/chopp3.png" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA DE CHOPP DE VIDRO 375ML</h5>
+                                    <p class="card-text">R$18,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 2 -->
+                        </div>
+
+                        <div class="row mb-4" id="linha2chopp">
+                            <!-- Card 1 -->
+                            <div class="card col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/Choop/chopp5.png" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA DE VIDRO COM FUNDO ESTRELADO 475ML</h5>
+                                    <p class="card-text">R$34,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 1 -->
+
+                            <!-- Card 2 -->
+                            <div class="card ml-5 mr-5 col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/Choop/chopp4.png" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA DE VIDRO BEER MUG 475ML</h5>
+                                    <p class="card-text">R$30,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 2 -->
+
+                            <!-- Card 2 -->
+                            <div class="card col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/Choop/chopp2.png" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">CANECA DE VIDRO COM FUNDO ESTRELADO E TARJA 475ML</h5>
+                                    <p class="card-text">R$36,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 2 -->
+                        </div>
+                    </div>
+
+                    <!-- Canecas de café japonês -->
+                    <div class="tab-pane fade" id="pills-japones" role="tabpanel" aria-labelledby="pills-japones-tab">
+                        <div class="row mb-4" id="linha1japones">
+                            <!-- Card 1 -->
+                            <div class="card col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/Japones/japones.jpg"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">COPO BRANCO DE CHÁ JAPONÊS</h5>
+                                    <p class="card-text">R$16,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Visitar</a></div>
+                            </div>
+                            <!-- Fim do card 1 -->
+
+                            <!-- Card 2 -->
+                            <div class="card ml-5 col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/Cafe/cafe.png" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">COPO BRANCO DE CAFÉ</h5>
+                                    <p class="card-text">R$38,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Visitar</a></div>
+                            </div>
+                            <!-- Fim do card 2 -->
+                        </div>
+                    </div>
+
+                    <!-- Squeeze -->
+                    <div class="tab-pane fade" id="pills-squeeze" role="tabpanel" aria-labelledby="pills-squeeze-tab">
+                        <div class="row mb-4" id="linha1squeeze">
+                            <!-- Card 1 -->
+                            <div class="card col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/Squeeze/squeeze1.png"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">SQUEEZE BRANCO COM BIQUEIRA E TAMPA 500ML</h5>
+                                    <p class="card-text">R$15,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 1 -->
+
+                            <!-- Card 2 -->
+                            <div class="card ml-5 mr-5 col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/Squeeze/squeeze2.png"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">SQUEEZE BRANCO COM BICO RETRÁTIL 600ML</h5>
+                                    <p class="card-text">R$24,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 2 -->
+
+                            <!-- Card 2 -->
+                            <div class="card col-md" style="width: 21.75rem;">
+                                <img class="card-img-top" src="img/Canecas/Squeeze/squeeze3.png"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">SQUEEZE BRANCO COM TAMPA MOSQUETÃO</h5>
+                                    <p class="card-text">R$25,00.</p>
+                                </div>
+                                <div class="card-body"><a href="pedidos.html"
+                                        class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
+                            </div>
+                            <!-- Fim do card 2 -->
+                        </div>
+                    </div>
+
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Anterior</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Próximo</span>
-                </a>
             </div>
         </div>
-
-        <div class="row">
-            <ul class="nav nav-pills nav-fill bg-white shadow-sm rounded" id="pills-tab" role="tablist">
-                <li class="nav-item pill">
-                    <a class="nav-link active" id="pills-comum-tab" data-toggle="pill" href="#pills-comum" role="tab"
-                        aria-controls="pills-comum" aria-selected="true">COMUM</a>
-                </li>
-                <li class="nav-item pill">
-                    <a class="nav-link" id="pills-metalizada-tab" data-toggle="pill" href="#pills-metalizada" role="tab"
-                        aria-controls="pills-metalizada" aria-selected="false">METALIZADA</a>
-                </li>
-                <li class="nav-item pill">
-                    <a class="nav-link" id="pills-magica-tab" data-toggle="pill" href="#pills-magica" role="tab"
-                        aria-controls="pills-magica" aria-selected="false">MÁGICA</a>
-                </li>
-                <li class="nav-item pill">
-                    <a class="nav-link" id="pills-cromada-tab" data-toggle="pill" href="#pills-cromada" role="tab"
-                        aria-controls="pills-cromada" aria-selected="false">CROMADA</a>
-                </li>
-                <li class="nav-item pill">
-                    <a class="nav-link" id="pills-fundo-tab" data-toggle="pill" href="#pills-fundo" role="tab"
-                        aria-controls="pills-fundo" aria-selected="false">FUNDO COLORIDO</a>
-                </li>
-                <li class="nav-item pill">
-                    <a class="nav-link" id="pills-alca-tab" data-toggle="pill" href="#pills-alca" role="tab"
-                        aria-controls="pills-alca" aria-selected="false">ALÇA COLORIDA</a>
-                </li>
-                <li class="nav-item pill">
-                    <a class="nav-link" id="pills-tarja-tab" data-toggle="pill" href="#pills-tarja" role="tab"
-                        aria-controls="pills-tarja" aria-selected="false">TARJA BRANCA</a>
-                </li>
-                <li class="nav-item pill">
-                    <a class="nav-link" id="pills-chopp-tab" data-toggle="pill" href="#pills-chopp" role="tab"
-                        aria-controls="pills-chopp" aria-selected="false">CHOPP</a>
-                </li>
-                <li class="nav-item pill">
-                    <a class="nav-link" id="pills-japones-tab" data-toggle="pill" href="#pills-japones" role="tab"
-                        aria-controls="pills-japones" aria-selected="false">JAPONÊS E CAFÉ</a>
-                </li>
-                <li class="nav-item pill">
-                    <a class="nav-link" id="pills-squeeze-tab" data-toggle="pill" href="#pills-squeeze" role="tab"
-                        aria-controls="pills-squeeze" aria-selected="false">SQUEEZE</a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="largura-site w-90 mt-4">
-            <div class="tab-content container" id="pills-tabContent">
-                <!-- Canecas comuns -->
-                <div class="tab-pane fade show active" id="pills-comum" role="tabpanel"
-                    aria-labelledby="pills-comum-tab">
-                    <div class="row mb-4" id="linha1comum">
-                        <!-- Card 1 -->
-                        <div class="shadow bg-white rounded" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/Comum/comum1.png" alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA COMUM BRANCA</h5>
-                                <p class="card-text">R$15,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 1 -->
-                    </div>
-                </div>
-
-                <!-- Canecas metalizadas -->
-                <div class="tab-pane fade" id="pills-metalizada" role="tabpanel" aria-labelledby="pills-metalizada-tab">
-                    <div class="row mb-4" id="linha1metalizada">
-                        <!-- Card 1 -->
-                        <div class="card col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/Metalizada/metalizada4.png"
-                                alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA METALIZADA ROSA</h5>
-                                <p class="card-text">R$23,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 1 -->
-
-                        <!-- Card 2 -->
-                        <div class="card ml-5 mr-5 col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/Metalizada/metalizada5.png"
-                                alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA METALIZADA PRATA</h5>
-                                <p class="card-text">R$23,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 2 -->
-
-                        <!-- Card 2 -->
-                        <div class="card col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/Metalizada/metalizada6.png"
-                                alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA METALIZADA DOURADA</h5>
-                                <p class="card-text">R$24,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 2 -->
-                    </div>
-                </div>
-
-                <!-- Canecas mágicas -->
-                <div class="tab-pane fade" id="pills-magica" role="tabpanel" aria-labelledby="pills-magica-tab">
-                    <div class="row mb-4" id="linha1fundo">
-                        <!-- Card 1 -->
-                        <div class="card col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/Magica/alca2.png" alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA MÁGICA COM FORMATO DE CORAÇÃO</h5>
-                                <p class="card-text mt-4">Caneca nas cores vermelha e azul por R$25,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 1 -->
-
-                        <!-- Card 2 -->
-                        <div class="card ml-5 mr-5 col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/Magica/alca3.png" alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA MÁGICA COM ALÇA DE CORAÇÃO</h5>
-                                <p class="card-text mt-5">Caneca na cor vermelha por R$25,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 2 -->
-
-                        <!-- Card 3 -->
-                        <div class="card col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/Magica/magica4.png" alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA MÁGICA COM INTERIOR E COLHER COLORIDOS</h5>
-                                <p class="card-text mt-4">Caneca nas cores azul clara, laranja, rosa, verde, vermelha e
-                                    amarela por R$25,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 3 -->
-                    </div>
-
-                    <div class="row mb-4" id="linha2magica">
-                        <!-- Card 4 -->
-                        <div class="card col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/Magica/magica2.png" alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA MÁGICA FOSCA</h5>
-                                <p class="card-text mt-4">Caneca nas cores preta e preta opaca por R$24,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Card 5 -->
-                        <div class="card ml-5 mr-5 col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/Magica/magica3.png" alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA MÁGICA BRILHANTE</h5>
-                                <p class="card-text mt-4">Caneca nas cores preta, vermelha e azul por R$23,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 5 -->
-                        <div class="card col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/Magica/magica1.png" alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA ALÇA E INTERIOR</h5>
-                                <p class="card-text mt-4">Caneca nas cores vermelha e azul por R$25,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Card 6 -->
-
-                        <!-- Fim do card 6 -->
-                    </div>
-                </div>
-
-                <!-- Canecas cromadas -->
-                <div class="tab-pane fade" id="pills-cromada" role="tabpanel" aria-labelledby="pills-cromada-tab">
-                    <div class="row mb-4" id="linha1cromada">
-                        <!-- Card 1 -->
-                        <div class="card col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/cromada/cromada2.png"
-                                alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA CROMADA PRATA</h5>
-                                <p class="card-text">R$24,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 1 -->
-
-                        <!-- Card 2 -->
-                        <div class="card ml-5 col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/cromada/cromada3.png"
-                                alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA CROMADA DOURADA</h5>
-                                <p class="card-text">R$24,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                    </div>
-                    <!-- Fim do card 2 -->
-                </div>
-
-                <!-- Canecas com fundo -->
-                <div class="tab-pane fade" id="pills-fundo" role="tabpanel" aria-labelledby="pills-fundo-tab">
-                    <div class="row mb-4" id="linha1fundo">
-                        <!-- Card 1 -->
-                        <div class="card col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/FundoColorido/fundo2.png"
-                                alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA FUNDO COLORIDO</h5>
-                                <p class="card-text mt-5">Caneca branca com interior colorido R$17,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 1 -->
-
-                        <!-- Card 2 -->
-                        <div class="card ml-5 mr-5 col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/FundoColorido/fundo3.png"
-                                alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA FUNDO, ALÇA E INTERIROR</h5>
-                                <p class="card-text mt-4">Caneca branca com fundo alça e interior coloridos por R$21,00.
-                                </p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 2 -->
-
-                        <!-- Card 3 -->
-                        <div class="card col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/FundoColorido/fundo4.png"
-                                alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA ALÇA E INTERIOR</h5>
-                                <p class="card-text mt-5">Caneca branca com fundo e alça coloridos por R$19,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 3 -->
-                    </div>
-
-                    <div class="row mb-4" id="linha2fundo">
-                        <!-- Card 4 -->
-                        <div class="card" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/FundoColorido/fundo5.png"
-                                alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA COM ALÇA DE CORAÇÃO E INTERIOR</h5>
-                                <p class="card-text mt-4">Caneca branca com alça com formato de coração e interior
-                                    coloridos por R$20,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Canecas com alça -->
-                <div class="tab-pane fade" id="pills-alca" role="tabpanel" aria-labelledby="pills-alca-tab">
-                    <div class="row mb-4" id="linha1alca">
-                        <!-- Card 1 -->
-                        <div class="card col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/FundoColorido/fundo3.png"
-                                alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA FUNDO, ALÇA E INTERIOR</h5>
-                                <p class="card-text mt-4">Caneca branca com fundo alça e interior coloridos por R$21,00.
-                                </p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 1 -->
-
-                        <!-- Card 2 -->
-                        <div class="card ml-5 mr-5 col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/FundoColorido/fundo4.png"
-                                alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA ALÇA E INTERIOR</h5>
-                                <p class="card-text mt-5">Caneca branca com fundo e alça coloridos por R$19,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 2 -->
-
-                        <!-- Card 3 -->
-                        <div class="card col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/FundoColorido/fundo5.png"
-                                alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA COM ALÇA DE CORAÇÃO E INTERIOR</h5>
-                                <p class="card-text mt-4">Caneca branca com alça com formato de coração e interior
-                                    coloridos por R$20,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 3 -->
-
-                    </div>
-
-                    <div class="row mb-4" id="linha2fundo">
-                        <!-- Card 4 -->
-                        <div class="card" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/AlcaColorida/al%C3%A7a.png"
-                                alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA COM ALÇA COLORIDA</h5>
-                                <p class="card-text mt-5">Caneca branca com alça colorida por R$17,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Visitar</a></div>
-                        </div>
-                        <!-- Fim do card 4 -->
-                    </div>
-
-                </div>
-
-                <!-- Canecas com tarja -->
-                <div class="tab-pane fade" id="pills-tarja" role="tabpanel" aria-labelledby="pills-tarja-tab">
-                    <div class="row mb-4" id="linha1tarja">
-                        <!-- Card 1 -->
-                        <div class="card col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/TarjaBranca/tarja3.png"
-                                alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA NEON COM TARJA BRANCA</h5>
-                                <p class="card-text">Caneca neon nas cores verde e vermelha por R$26,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 1 -->
-
-                        <!-- Card 2 -->
-                        <div class="card ml-5 col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/TarjaBranca/tarja2.png"
-                                alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA PRETA COM TARJA BRANCA</h5>
-                                <p class="card-text">Caneca nas cores Verde clara, vermelha e laranja por R$28,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                    </div>
-                    <!-- Fim do card 2 -->
-                </div>
-
-                <!-- Canecas de choop -->
-                <div class="tab-pane fade" id="pills-chopp" role="tabpanel" aria-labelledby="pills-chopp-tab">
-                    <div class="row mb-4" id="linha1chopp">
-                        <!-- Card 1 -->
-                        <div class="card col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/Choop/chopp1.png" alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA DE CHOPP DE VIDRO JATEADA 330ML</h5>
-                                <p class="card-text">R$15,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 1 -->
-
-                        <!-- Card 2 -->
-                        <div class="card ml-5 mr-5 col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/Choop/chopp6.png" alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA DE CHOPP DE ALUMÍNIO 400ML</h5>
-                                <p class="card-text">R$15,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 2 -->
-
-                        <!-- Card 2 -->
-                        <div class="card col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/Choop/chopp3.png" alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA DE CHOPP DE VIDRO 375ML</h5>
-                                <p class="card-text">R$18,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 2 -->
-                    </div>
-
-                    <div class="row mb-4" id="linha2chopp">
-                        <!-- Card 1 -->
-                        <div class="card col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/Choop/chopp5.png" alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA DE VIDRO COM FUNDO ESTRELADO 475ML</h5>
-                                <p class="card-text">R$34,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 1 -->
-
-                        <!-- Card 2 -->
-                        <div class="card ml-5 mr-5 col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/Choop/chopp4.png" alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA DE VIDRO BEER MUG 475ML</h5>
-                                <p class="card-text">R$30,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 2 -->
-
-                        <!-- Card 2 -->
-                        <div class="card col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/Choop/chopp2.png" alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">CANECA DE VIDRO COM FUNDO ESTRELADO E TARJA 475ML</h5>
-                                <p class="card-text">R$36,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 2 -->
-                    </div>
-                </div>
-
-                <!-- Canecas de café japonês -->
-                <div class="tab-pane fade" id="pills-japones" role="tabpanel" aria-labelledby="pills-japones-tab">
-                    <div class="row mb-4" id="linha1japones">
-                        <!-- Card 1 -->
-                        <div class="card col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/Japones/japones.jpg"
-                                alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">COPO BRANCO DE CHÁ JAPONÊS</h5>
-                                <p class="card-text">R$16,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Visitar</a></div>
-                        </div>
-                        <!-- Fim do card 1 -->
-
-                        <!-- Card 2 -->
-                        <div class="card ml-5 col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/Cafe/cafe.png" alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">COPO BRANCO DE CAFÉ</h5>
-                                <p class="card-text">R$38,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Visitar</a></div>
-                        </div>
-                        <!-- Fim do card 2 -->
-                    </div>
-                </div>
-
-                <!-- Squeeze -->
-                <div class="tab-pane fade" id="pills-squeeze" role="tabpanel" aria-labelledby="pills-squeeze-tab">
-                    <div class="row mb-4" id="linha1squeeze">
-                        <!-- Card 1 -->
-                        <div class="card col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/Squeeze/squeeze1.png"
-                                alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">SQUEEZE BRANCO COM BIQUEIRA E TAMPA 500ML</h5>
-                                <p class="card-text">R$15,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 1 -->
-
-                        <!-- Card 2 -->
-                        <div class="card ml-5 mr-5 col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/Squeeze/squeeze2.png"
-                                alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">SQUEEZE BRANCO COM BICO RETRÁTIL 600ML</h5>
-                                <p class="card-text">R$24,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 2 -->
-
-                        <!-- Card 2 -->
-                        <div class="card col-md" style="width: 21.75rem;">
-                            <img class="card-img-top" src="img/Canecas/Squeeze/squeeze3.png"
-                                alt="Imagem de capa do card">
-                            <div class="card-body">
-                                <h5 class="card-title">SQUEEZE BRANCO COM TAMPA MOSQUETÃO</h5>
-                                <p class="card-text">R$25,00.</p>
-                            </div>
-                            <div class="card-body"><a href="pedidos.php"
-                                    class="btn btn-outline-dark cor-botao text-white">Pedir</a></div>
-                        </div>
-                        <!-- Fim do card 2 -->
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
+    </main>
 
     <!-- Rodapé -->
     <footer class="cor-botao p-4">
