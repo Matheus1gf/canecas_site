@@ -2,7 +2,7 @@
 
 class Database {
     private $host = "Localhost";
-    private $db_name = "meubancodedados";
+    private $db_name = "juana_database";
     private $username = "root";
     private $password = "";
     public $conn;

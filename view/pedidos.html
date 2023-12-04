@@ -25,7 +25,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <script src="js.src/pedidos.js"></script>
-    <script src="js.src/validate.js"></script>
+    <script src="js.src/validacoes.js"></script>
     <script src="js.src/inputMask.js"></script>
     <script src="js.src/mascaraTelefone.js"></script>
 </head>
@@ -38,25 +38,7 @@
                 <div class="logo col">
                     <img src="img/logo/Logo%20final2.png" alt="">
                 </div>
-
-                <!-- Login -->
-                <div class="col">
-                    <label class="sr-only" for="username">Usuário</label>
-                    <input type="text" name="username" class="form-control mb-2" id="username" placeholder="Usuário">
-                    <a href="" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">
-                        Esqueci minha senha
-                    </a>
-                </div>
-                <div class="col">
-                    <label class="sr-only" for="password">Senha</label>
-                    <input type="password" name="password" class="form-control" id="password" placeholder="Senha">
-                    <a href="cadastro.html">Clique aqui para se cadastrar</a>
-                </div>
-                <div class="col">
-                    <button type="submit" class="btn btn-dark text-white login mb-2">Enviar</button>
-                </div>
             </div>
-
 
             <!-- Menu de navegação -->
             <div class="row mt-5">
@@ -83,6 +65,9 @@
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="outros.html">OUTROS</a>
                                 </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link ml-3" href="novidades.html">NOVIDADES</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="pedidos.html">LOJA DE PEDIDOS</a>
@@ -175,17 +160,53 @@
             </div>
 
             <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="nome_completo" class="form-label">Nome Completo:</label>
+                    <input type="text" class="form-control" name="nome_completo" required id="nome_completo">
+                </div>
+    
+                <div class="col-md-6">
+                    <label for="email" class="form-label">E-mail:</label>
+                    <input type="email" class="form-control" name="email" required id="email">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="celular" class="form-label">Celular:</label>
+                    <input type="mobile" class="form-control" name="celular" required id="celular">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="cidade" class="form-label">Cidade:</label>
+                    <input type="text" class="form-control" name="cidade" required id="cidade">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="estado" class="form-label">Estado:</label>
+                    <input type="text" class="form-control" name="estado" required id="estado">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="bairro" class="form-label">Bairro:</label>
+                    <input type="text" class="form-control" name="bairro" required id="bairro">
+                </div>
+            </div>
+
+            <div class="row mb-3">
                 <label for="formFile" class="form-label">Anexe a imagem a ser impressa:</label>
                 <input class="form-control" type="file" id="formFile">
               </div>
 
             <div class="row mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Digite as observações do seu pedido:</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                <label for="observacao" class="form-label">Digite as observações do seu pedido:</label>
+                <textarea class="form-control" id="observacao" rows="5"></textarea>
             </div>
-
-            <div class="row">
-                <button type="button" class="btn btn-primary">Enviar</button>
+            
+            <div class="row mb-3">
+                <button type="button" class="btn btn-primary enviar_pedido">Enviar</button>
             </div>
         </div>
     </main>
@@ -193,7 +214,7 @@
     <footer class="cor-botao p-4">
         <div class="text-center text-white">
             <p>Banco de Areia, Mesquita - RJ, 26564-000</p>
-            <p>Copyright © 2018 - Todos os direitos reservados.</p>
+            <p>Copyright © 2023 - Todos os direitos reservados.</p>
         </div>
         <div class="botao btn btn bg-white p-0">
             <a href="https://www.facebook.com/juanapersonalizacoes/?ref=settings"><img src="img/social/facebook.png"
@@ -204,6 +225,8 @@
                     alt=""></a>
         </div>
     </footer>
+
+    <script src="js.src/pedidos.js"></script>
 
 </body>
 

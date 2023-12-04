@@ -1,7 +1,6 @@
 <?php
 
 require_once("../controller/user.class.php");
-require_once("../controller/pontuacao.class.php");
 require_once("../controller/database.class.php");
 require_once("../controller/validation.class.php");
 require_once("../controller/session.class.php");
@@ -25,26 +24,24 @@ try {
         throw new Exception('Erro: Token inválido.');
     }
 
+    $selectItem = $jsonResponse['selectItem'];
+    $selectCanecas = $jsonResponse['selectCanecas'] ?? "";
+    $selectChinelos = $jsonResponse['selectChinelos'] ?? "";
+    $selectCamisas = $jsonResponse['selectCamisas'] ?? "";
+    $selectBolsas = $jsonResponse['selectBolsas'] ?? "";
+    $selectOutros = $jsonResponse['selectOutros'] ?? "";
+    $item = $selectItem." - ".$selectCanecas.$selectChinelos.$selectCamisas.$selectBolsas.$selectOutros;
 
     $inputData = [
         'nome_completo' => $jsonResponse['nome_completo'],
-        'cpf' => $jsonResponse['cpf'],
+        'celular' => $jsonResponse['celular'],
         'email' => $jsonResponse['email'],
-        'data_nascimento' => $jsonResponse['data_nascimento'],
-        'sexo' => $jsonResponse['sexo'] ?? "",
         'cidade' => $jsonResponse['cidade'],
         'estado' => $jsonResponse['estado'],
         'bairro' => $jsonResponse['bairro'],
-        'rua' => $jsonResponse['rua'],
-        'numero' => $jsonResponse['numero'],
-        'complemento' => $jsonResponse['complemento'],
-        'rg' => $jsonResponse['rg'],
-        'senha' => $jsonResponse['senha'],
         'foto' => $jsonResponse['foto'] ?? "...",
-        'conta_bancaria' => $jsonResponse['conta_bancaria'],
-        'banco' => $jsonResponse['banco'],
-        'agencia' => $jsonResponse['agencia'],
-        'pix' => $jsonResponse['pix']
+        'item' => $item,
+        'observacao' => $jsonResponse['observacao']
     ];
 
     $db = new Database();
@@ -56,11 +53,11 @@ try {
 
     $response['sucesso'] = true;
     $response['mensagem'] = 'Cadastro realizado com sucesso.';
-
-    echo('Cadastro realizado com sucesso.'."\n");
+    
+    echo(json_encode($response));
 } catch (Exception $e) {
     $response['sucesso'] = false;
     $response['mensagem'] = 'Erro: ' . $e->getMessage();
 
-    echo('Erro: ' . $e->getMessage()."\n");
+    echo(json_encode($response));
 }
